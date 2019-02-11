@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+  align-items: center;
+  justify-content: center; }
+  body .registrationForm {
+    display: flex;
+    flex-direction: column;
+    width: 448px;
+    height: 568px;
+    background: #FFFFFF;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px; }
+    body .registrationForm .signInUp {
+      display: flex;
+      justify-content: space-between;
+      width: 225px;
+      height: 48px;
+      margin: 64px 0 96px 0; }
+      body .registrationForm .signInUp .signIn {
+        font-family: "Roboto", serif;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 1.25px;
+        color: rgba(0, 0, 0, 0.87); }
+      body .registrationForm .signInUp .rectangle {
+        width: 1px;
+        height: 48px;
+        margin: 0;
+        background: rgba(0, 0, 0, 0.12);
+        border-radius: 0; }
+      body .registrationForm .signInUp .singUp {
+        font-family: "Roboto", serif;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 1.25px;
+        color: rgba(0, 0, 0, 0.38); }
+    body .registrationForm input:not([type=checkbox]) {
+      width: 328px;
+      height: 48px;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+      font-family: "Roboto", serif;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 20px;
+      font-size: 14px;
+      letter-spacing: 0.25px;
+      color: rgba(0, 0, 0, 0.87);
+      mix-blend-mode: normal;
+      padding-left: 28px;
+      box-sizing: border-box;
+      margin-bottom: 40px;
+      outline-style: none; }
+    body .registrationForm input:focus {
+      border: 1px solid #0068FF;
+      border-radius: 4px; }
+    body .registrationForm .agreeGroup {
+      width: 328px;
+      height: 16px;
+      display: inline-flex;
+      justify-content: space-between;
+      margin-bottom: 96px; }
+      body .registrationForm .agreeGroup div {
+        display: inline-flex;
+        align-items: center; }
+        body .registrationForm .agreeGroup div .placeholder {
+          width: 16px;
+          height: 16px;
+          background: #FFFFFF;
+          border: 1px solid rgba(0, 0, 0, 0.12);
+          border-radius: 4px; }
+        body .registrationForm .agreeGroup div .checkbox {
+          display: inherit; }
+          body .registrationForm .agreeGroup div .checkbox input[type="checkbox"] {
+            visibility: hidden;
+            margin: 0;
+            display: block;
+            width: 16px;
+            height: 16px;
+            flex: 0 0 auto; }
+          body .registrationForm .agreeGroup div .checkbox input[type="checkbox"]:checked + .fake-checkbox {
+            background-color: #0068FF;
+            border-color: #0068FF; }
+          body .registrationForm .agreeGroup div .checkbox input[type="checkbox"]:checked + .fake-checkbox::after {
+            content: "";
+            display: block;
+            border-style: solid;
+            border-width: 0 0 2px 2px;
+            border-color: transparent transparent #fff #fff;
+            margin: auto;
+            width: 6px;
+            height: 3px;
+            transform: rotate(-45deg) translate3d(1px, -9%, 0); }
+          body .registrationForm .agreeGroup div .checkbox label:not(.fake-checkbox) {
+            padding: 0 0 0 10px; }
+        body .registrationForm .agreeGroup div .checkbox .fake-checkbox {
+          width: 16px;
+          height: 16px;
+          display: flex;
+          flex: 0 0 auto;
+          box-sizing: border-box;
+          border: 1px solid rgba(0, 0, 0, 0.12);
+          border-radius: 4px;
+          background-color: #fff;
+          margin: 0 0 0 -16px; }
+        body .registrationForm .agreeGroup div span {
+          font-family: "Roboto", serif;
+          font-style: normal;
+          font-weight: normal;
+          line-height: 16px;
+          font-size: 12px;
+          letter-spacing: 0.4px;
+          color: rgba(0, 0, 0, 0.6);
+          mix-blend-mode: normal; }
+          body .registrationForm .agreeGroup div span a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.6); }
+    body .registrationForm .btn {
+      width: 328px;
+      height: 48px;
+      outline-style: none;
+      background: #0068FF;
+      border: none;
+      border-radius: 4px;
+      font-family: "Roboto", serif;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      font-size: 14px;
+      text-align: center;
+      letter-spacing: 1.25px;
+      color: #FFFFFF;
+      padding: 16px 0;
+      box-sizing: border-box; }
+
+html {
+  height: 100%;
+  background: #FFFFFF;
+  font-family: "Roboto", serif; }
+
+body {
+  min-height: 100%;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column; }

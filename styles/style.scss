@@ -1,0 +1,21 @@
+//@import "variables";
+//@import "header";
+//@import "buttons";
+@import "form";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html {
+  height: 100%;
+  background: #FFFFFF;;
+  font-family: "Roboto", serif;
+}
+
+body {
+  min-height: 100%;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  //margin: 0 auto;
+}
+
+
