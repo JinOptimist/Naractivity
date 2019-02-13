@@ -6,29 +6,29 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="registrationForm">
-    <div class="signing">
-        <button class="signIn">SIGN IN</button>
-        <p class="rectangle"></p>
-        <button class="singUp">SIGN UP</button>
-    </div>
-    <input type="email" placeholder="Email">
-    <input type="password" placeholder="Password">
-    <div class="agreeGroup">
-        <div>
-            <span class="checkbox">
-                <input type="checkbox" id="checkbox1">
-                <label for="checkbox1" class="fake-checkbox"></label>
-                <label for="checkbox1">Keep me signed in</label>
-            </span>
-        </div>
-        <div>
-            <span><a href="#">Forgot password?</a></span>
-        </div>
-    </div>
-    <div>
-        <button class="btn">SIGN IN</button>
-    </div>
+<div class="registrationForm" ng-click="idle($event)">
+	<div class="signInUp">
+		<p class="tabName active">Логин</p>
+		<p class="rectangle"></p>
+		<p class="tabName">Регистрация</p>
+	</div>
+	<input type="email" placeholder="Email">
+	<input type="password" placeholder="Password">
+	<div class="agreeGroup">
+		<div>
+			<span class="checkbox">
+				<input type="checkbox" id="keepMeSigned">
+				<label for="keepMeSigned" class="fake-checkbox"></label>
+				<label for="keepMeSigned">Keep me signed in</label>
+			</span>
+		</div>
+		<div>
+			<span><a href="#">Forgot password?</a></span>
+		</div>
+	</div>
+	<div>
+		<button class="btn">SIGN IN</button>
+	</div>
 </div>
 </body>
 </html>
