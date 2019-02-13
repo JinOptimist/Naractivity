@@ -12,7 +12,7 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 
-    .signInUp {
+    .signing {
       display: flex;
       justify-content: space-between;
       width: 225px;
@@ -28,6 +28,13 @@ body {
         text-align: center;
         letter-spacing: 1.25px;
         color: rgba(0, 0, 0, 0.87);
+        outline-style: none;
+        border: none;
+        background: #FFFFFF;
+
+        &:focus {
+          color: rgba(0, 0, 0, 0.38);
+        }
       }
 
       .rectangle {
@@ -46,7 +53,14 @@ body {
         font-size: 14px;
         text-align: center;
         letter-spacing: 1.25px;
-        color: rgba(0, 0, 0, 0.38);
+        color: rgba(0, 0, 0, 0.87);
+        outline-style: none;
+        border: none;
+        background: #FFFFFF;
+
+        &:focus {
+          color: rgba(0, 0, 0, 0.38);
+        }
       }
     }
 
