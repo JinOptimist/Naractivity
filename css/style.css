@@ -2,158 +2,180 @@
 body {
   align-items: center;
   justify-content: center; }
-  .registrationForm {
-  display: flex;
-  flex-direction: column;
-  width: 448px;
-  height: 568px;
-  background: #fff;
-  align-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  font-family: "Roboto", serif;
-  font-size: 14px;
-  /* Email and password */
-}
+  body .registrationForm {
+    display: flex;
+    flex-direction: column;
+    width: 448px;
+    height: 568px;
+    background: var(--white);
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-family: "Roboto", serif;
+    font-size: 14px;
+    /* Email and password */ }
+    body .registrationForm .signInUp {
+      display: flex;
+      justify-content: space-between;
+      width: 225px;
+      height: 48px;
+      margin: 64px 0 96px 0; }
+      body .registrationForm .signInUp .tabName {
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 1.25px;
+        display: flex;
+        align-items: center;
+        color: rgba(0, 0, 0, 0.38); }
+        body .registrationForm .signInUp .tabName.active {
+          color: rgba(0, 0, 0, 0.87); }
+      body .registrationForm .signInUp .rectangle {
+        width: 1px;
+        height: 48px;
+        margin: 0;
+        background: rgba(0, 0, 0, 0.12);
+        border-radius: 0; }
+    body .registrationForm input:not([type=checkbox]) {
+      width: 328px;
+      height: 48px;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+      line-height: 20px;
+      letter-spacing: 0.25px;
+      color: rgba(0, 0, 0, 0.87);
+      mix-blend-mode: normal;
+      padding-left: 28px;
+      box-sizing: border-box;
+      margin-bottom: 40px;
+      outline-style: none; }
+    body .registrationForm input:focus {
+      border: 1px solid var(--blueV2);
+      border-radius: 4px; }
+    body .registrationForm .agreeGroup {
+      width: 328px;
+      height: 16px;
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 96px; }
+      body .registrationForm .agreeGroup div {
+        display: flex; }
+      body .registrationForm .agreeGroup .checkbox {
+        display: flex; }
+        body .registrationForm .agreeGroup .checkbox input[type=checkbox] {
+          display: none; }
+        body .registrationForm .agreeGroup .checkbox input[type=checkbox]:checked + .fake-checkbox {
+          background-color: var(--blueV2);
+          border-color: var(--blueV2); }
+        body .registrationForm .agreeGroup .checkbox input[type=checkbox]:checked + .fake-checkbox::after {
+          content: "";
+          display: block;
+          border-style: solid;
+          border-width: 0 0 2px 2px;
+          border-color: transparent transparent var(--white) var(--white);
+          margin: auto;
+          width: 6px;
+          height: 3px;
+          transform: rotate(-45deg) translate3d(1px, -9%, 0); }
+        body .registrationForm .agreeGroup .checkbox label:not(.fake-checkbox) {
+          padding: 0 0 0 10px; }
+        body .registrationForm .agreeGroup .checkbox .fake-checkbox {
+          width: 16px;
+          height: 16px;
+          display: flex;
+          flex: 0 0 auto;
+          box-sizing: border-box;
+          border: 1px solid rgba(0, 0, 0, 0.12);
+          border-radius: 4px;
+          background-color: var(--white); }
+      body .registrationForm .agreeGroup span {
+        font-style: normal;
+        font-weight: normal;
+        line-height: 16px;
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        color: rgba(0, 0, 0, 0.6);
+        mix-blend-mode: normal; }
+        body .registrationForm .agreeGroup span a {
+          color: rgba(0, 0, 0, 0.6); }
+    body .registrationForm .btn {
+      width: 328px;
+      height: 48px;
+      outline-style: none;
+      background: var(--blueV2);
+      border: none;
+      border-radius: 4px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: 1.25px;
+      color: var(--white);
+      padding: 16px 0;
+      box-sizing: border-box; }
 
-.registrationForm .signInUp {
-  display: flex;
-  justify-content: space-between;
-  width: 225px;
-  height: 48px;
-  margin: 64px 0 96px 0;
-}
-
-.registrationForm .signInUp .tabName {
-  font-style: normal;
-  font-weight: 500;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 1.25px;
-  display: flex;
-  align-items: center;
-  color: rgba(0, 0, 0, 0.38);
-}
-
-.registrationForm .signInUp .tabName.active {
-  color: rgba(0, 0, 0, 0.87);
-}
-
-.registrationForm .signInUp .rectangle {
-  width: 1px;
-  height: 48px;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
-  background: rgba(0, 0, 0, 0.12);
-  border-radius: 0;
-}
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-.registrationForm input:not([type=checkbox]) {
-  width: 328px;
-  height: 48px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  line-height: 20px;
-  letter-spacing: 0.25px;
-  color: rgba(0, 0, 0, 0.87);
-  mix-blend-mode: normal;
-  padding-left: 28px;
-  box-sizing: border-box;
-  margin-bottom: 40px;
-  outline-style: none;
-}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
 
-.registrationForm input:focus {
-  border: 1px solid #0068FF;
-  border-radius: 4px;
-}
+body {
+  line-height: 1; }
 
-.registrationForm .agreeGroup {
-  width: 328px;
-  height: 16px;
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 96px;
-}
+ol, ul {
+  list-style: none; }
+  ol li, ul li {
+    list-style: none;
+    display: inline-block; }
 
-.registrationForm .agreeGroup div {
-  display: flex;
-}
+blockquote, q {
+  quotes: none; }
 
-.registrationForm .agreeGroup .checkbox {
-  display: flex;
-}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
 
-.registrationForm .agreeGroup .checkbox input[type=checkbox] {
-  display: none;
-}
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
 
-.registrationForm .agreeGroup .checkbox input[type=checkbox]:checked + .fake-checkbox {
-  background-color: #0068FF;
-  border-color: #0068FF;
-}
+a {
+  text-decoration: none; }
 
-.registrationForm .agreeGroup .checkbox input[type=checkbox]:checked + .fake-checkbox::after {
-  content: "";
-  display: block;
-  border-style: solid;
-  border-width: 0 0 2px 2px;
-  border-color: transparent transparent #fff #fff;
-  margin: auto;
-  width: 6px;
-  height: 3px;
-  transform: rotate(-45deg) translate3d(1px, -9%, 0);
-}
-
-.registrationForm .agreeGroup .checkbox label:not(.fake-checkbox) {
-  padding: 0 0 0 10px;
-}
-
-.registrationForm .agreeGroup .checkbox .fake-checkbox {
-  width: 16px;
-  height: 16px;
-  display: flex;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  background-color: #fff;
-}
-
-.registrationForm .agreeGroup span {
-  font-style: normal;
-  font-weight: normal;
-  line-height: 16px;
-  font-size: 12px;
-  letter-spacing: 0.4px;
-  color: rgba(0, 0, 0, 0.6);
-  mix-blend-mode: normal;
-}
-
-.registrationForm .agreeGroup span a {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.registrationForm .btn {
-  width: 328px;
-  height: 48px;
-  outline-style: none;
-  background: #0068FF;
-  border: none;
-  border-radius: 4px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 1.25px;
-  color: #fff;
-  padding: 16px 0;
-  box-sizing: border-box;
-}
+:root {
+  --white: #fff;
+  --blueV2: #0068FF; }
 
 html {
   height: 100%;
-  background: #FFFFFF;
+  background: var(--white);
   font-family: "Roboto", serif; }
 
 body {
