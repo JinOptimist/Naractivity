@@ -17,17 +17,27 @@ body {
     body .registrationForm .signInUp {
       display: flex;
       justify-content: space-between;
-      width: 225px;
+      align-items: center;
+      width: 328px;
       height: 48px;
       margin: 64px 0 96px 0; }
+      body .registrationForm .signInUp a {
+        width: 48px;
+        height: 48px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        border-radius: 25px;
+        padding: 16px;
+        box-sizing: border-box;
+        position: absolute;
+        transform: translateX(-24px); }
       body .registrationForm .signInUp .tabName {
-        font-style: normal;
+        display: flex;
+        justify-content: center;
+        width: 164px;
         font-weight: 500;
         line-height: 16px;
         text-align: center;
         letter-spacing: 1.25px;
-        display: flex;
-        align-items: center;
         color: rgba(0, 0, 0, 0.38); }
         body .registrationForm .signInUp .tabName.active {
           color: rgba(0, 0, 0, 0.87); }
@@ -53,13 +63,24 @@ body {
     body .registrationForm input:focus {
       border: 1px solid var(--blueV2);
       border-radius: 4px; }
+    body .registrationForm input:not([type=email]) {
+      display: none; }
+    body .registrationForm .instructions {
+      width: 272px;
+      line-height: 20px;
+      font-size: 14px;
+      text-align: center;
+      letter-spacing: 0.25px;
+      color: rgba(0, 0, 0, 0.6);
+      margin-bottom: 162px; }
     body .registrationForm .agreeGroup {
       width: 328px;
       height: 16px;
       display: inline-flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 96px; }
+      margin-bottom: 96px;
+      display: none; }
       body .registrationForm .agreeGroup div {
         display: flex; }
       body .registrationForm .agreeGroup .checkbox {
