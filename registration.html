@@ -8,26 +8,28 @@
 <body>
 <div class="registrationForm" ng-click="idle($event)">
 	<div class="signInUp">
-		<p class="tabName active">Логин</p>
+		<a href="#" ><img src="icons/arrowBack.svg"></a>
+		<p class="tabName active">Вход</p>
 		<p class="rectangle"></p>
 		<p class="tabName">Регистрация</p>
 	</div>
-	<input type="email" placeholder="Email">
-	<input type="password" placeholder="Password">
+	<input type="email" placeholder="Электронная почта">
+	<p class="instructions">Мы отправим Вам инструкции для смены пароля</p>
+	<input type="password" placeholder="Пароль">
 	<div class="agreeGroup">
 		<div>
 			<span class="checkbox">
 				<input type="checkbox" id="keepMeSigned">
 				<label for="keepMeSigned" class="fake-checkbox"></label>
-				<label for="keepMeSigned">Keep me signed in</label>
+				<label for="keepMeSigned">Не выходить из системы</label>
 			</span>
 		</div>
 		<div>
-			<span><a href="#">Forgot password?</a></span>
+			<span><a href="#">Забыли пароль?</a></span>
 		</div>
 	</div>
 	<div>
-		<button class="btn">SIGN IN</button>
+	<button class="btn">ВОЙТИ</button>
 	</div>
 </div>
 </body>
